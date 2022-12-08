@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 style="font: size 75px;px">POKIWORLD</h1>
+    <h2 style="font: size 25px;px">Welcome to poki world where you search for and catch the best pokimons in the world</h2>
+    <form method="POST">
+
+        {{ form.hidden_tag() }}
+        {{ form.pokemon(class='form-control w-25', placeholder='Search by name or using its Pokédex number.') }}
+        {{ form.submit(class='btn btn-primary') }}
+    </form>
+
+{% endblock %}
